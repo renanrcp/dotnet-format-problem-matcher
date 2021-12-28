@@ -14,11 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-dotnet@v1
-          with:
-            dotnet-version: 3.1.101
-      - uses: xt0rted/dotnet-format-problem-matcher@v1
+      - uses: renanrcp/dotnet-format-problem-matcher@v.1.3.0
       - run: dotnet tool install -g dotnet-format
-      - run: dotnet-format --dry-run
+      - run: dotnet-format --no-restore --verify-no-changes
 ```
 
 ![Example of inline annotations](docs/annotations.png)
