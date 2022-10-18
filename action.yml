@@ -15,5 +15,5 @@ inputs:
     default: add
 
 runs:
-  using: "node16
+  using: "node16"
   main: "dist/index.js"
