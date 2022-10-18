@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-dotnet@v1
-      - uses: renanrcp/dotnet-format-problem-matcher@v.1.3.1
+      - uses: renanrcp/dotnet-format-problem-matcher@v.1.3.2
       - run: dotnet tool install -g dotnet-format
       - run: dotnet-format --no-restore --verify-no-changes
 ```
